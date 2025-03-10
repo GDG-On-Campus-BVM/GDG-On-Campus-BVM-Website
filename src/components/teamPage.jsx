@@ -16,7 +16,7 @@ const TeamPage = ({ teamMembers }) => {
     }
 
     return (
-        <div className=" flex flex-col justify-center items-center mx-10 my-14">
+        <div className=" flex flex-col justify-center items-center mx-2 my-14">
             <div>
                 <BentoGrid className=" mx-auto">
                     {teamMembers.map((item, i) => (
