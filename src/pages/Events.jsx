@@ -3,32 +3,33 @@ import EventsPage from "../components/eventPage"
 const Events = () => {
     const EventData = [
         {
-            title: "Figma Fusion: Where Ideas Take Shape",
-            description: `Join us for an exciting event exploring the power of Figma, a leading design tool. Participate in a design challenge, showcase your creativity, and win amazing prizes! 
-Total attendees: 95.`,
-            images: ["figma.jpeg"],
-            time: "15 September 2024",
+            title: "Game Dev 101: Build Your First 2D Game",
+            description: `Join us for an exciting Game Dev 101 workshop where you’ll explore the fundamentals of game development using Unity. Build your own 2D game, learn from industry experience, and kickstart your game dev journey! 🎮`,
+            images: ["https://ele7885nafmpgog1.public.blob.vercel-storage.com/events/game_dev.jpeg"],
+            time: "09 September 2025",
         },
         {
-            title: "Gen AI Study Jam",
-            description: `Gen AI Study Jams will provide students an opportunity to kickstart their learning on Gen AI technology, and implement the learning by enabling them to build projects on the Google Cloud console.
-Duration: 1 October - 10 November 2024`,
-            images: ["genAi.jpeg"],
+            title: "Google Cloud Study Jams 2025",
+            description: `Google Cloud Study Jams 2025 will provide students an opportunity to kickstart their learning in Cloud, Gen AI, AI/ML, and Big Data. Participants will gain hands-on experience by learning from scratch and implementing their knowledge through guided labs and projects on the Google Cloud Console.
+Duration: 1 October – 31 October 2025.`,
+            images: ["https://ele7885nafmpgog1.public.blob.vercel-storage.com/events/study_jams.jpeg"],
 
-            time: "1 Oct - 15 Nov 2024",
+            time: "1 Oct - 31 Oct 2025",
         },
         {
-            title: "Azure Cloud Computing Event",
-            description: `In Azure Cloud Computing event, attendees received an introduction to fundamental cloud services. A Microsoft expert led the session, offering practical insights on real-world applications and best practices for cloud adoption.`,
+            title: "TechSprint Hackathon 2026",
+            description: `TechSprint Hackathon by GDG On Campus BVM is a multi-phase hackathon focused on building AI-powered solutions. The event runs from 26 December to 12 January, including online project submission and an offline final round.
+
+📝 Registrations open till 3 January
+🚀 Project submission by 5 January
+🏆 Top 10 teams announced on 8 January
+🎯 Offline final round on 12 January
+
+👉 Register now using the button below`,
             images: [
-                "/azure/azure.jpg",
-                "/azure/azure1.jpeg",
-                "/azure/azure2.jpeg",
-                "/azure/azure3.jpeg",
-                "/azure/azure4.jpeg",
-                "/azure/azure5.jpeg",
+                "https://ele7885nafmpgog1.public.blob.vercel-storage.com/events/techsprint.jpeg"
             ],
-            time: "20 November 2024",
+            time: "26 Dec - 12 Jan 2026",
         },
     ]
     return (

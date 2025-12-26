@@ -1,10 +1,7 @@
+import React, { Suspense } from "react"
 import { motion } from "framer-motion"
-import dynamic from "next/dynamic"
 
-const World = dynamic(() => import("./ui/globe.jsx").then((m) => m.World), {
-    ssr: false,
-    loading: () => <p>Loading the World...</p>, // Fallback while loading
-})
+const World = React.lazy(() => import("./ui/globe.jsx").then((m) => ({ default: m.World })))
 
 const GithubGlobe = () => {
     const globeConfig = {
@@ -420,7 +417,9 @@ const GithubGlobe = () => {
                 </motion.div>
                 <div className=" w-full bottom-10  inset-x-0 h-30 bg-gradient-to-b pointer-events-none select-none  z-40" />
                 <div className=" w-full -bottom-20 h-72 md:h-full z-10">
-                    <World data={sampleArcs} globeConfig={globeConfig} />
+                    <Suspense fallback={<div className="flex items-center justify-center h-full text-white/50">Loading Globe...</div>}>
+                        <World data={sampleArcs} globeConfig={globeConfig} />
+                    </Suspense>
                 </div>
             </div>
         </div>

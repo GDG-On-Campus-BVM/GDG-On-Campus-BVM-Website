@@ -8,6 +8,26 @@ import {
 } from "./ui/animated-modal"
 import FlashbackTeam from "./flashbackTeam"
 
+const CardItem = ({ evt }) => (
+    <div className="flex-shrink-0 mx-2 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 rounded-xl overflow-hidden w-24 md:w-44">
+        <div className="flex flex-col items-center">
+            <img
+                src={evt.image}
+                alt={evt.title}
+                className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover"
+            />
+            <div className="w-full p-2 overflow-hidden text-center">
+                <p className="text-sm font-semibold line-clamp-2">
+                    {evt.title}
+                </p>
+                <p className="font-thin text-xs text-gray-500 mt-1">
+                    {evt.time}
+                </p>
+            </div>
+        </div>
+    </div>
+)
+
 export function FlashbackCard({ title, teamMembers, events }) {
     return (
         <div className="py-20 flex items-center justify-center z-50">
@@ -32,53 +52,15 @@ export function FlashbackCard({ title, teamMembers, events }) {
                             <div className="absolute flex animate-scroll">
                                 {/* First set of cards */}
                                 {events.map((evt, idx) => (
-                                    <div
-                                        key={`card1-${idx}`}
-                                        className="flex-shrink-0 mx-2 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 rounded-xl overflow-hidden"
-                                    >
-                                        <div>
-                                            <img
-                                                src={evt.image}
-                                                alt={evt.title}
-                                                className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover"
-                                            />
-                                            <div className="max-w-[100px] overflow-clip max-h-[100px]">
-                                                <p className="text-sm">
-                                                    {evt.title}
-                                                </p>
-                                                <p className="font-thin text-sm">
-                                                    {evt.time}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <CardItem key={`card1-${idx}`} evt={evt} />
                                 ))}
 
-                                <div className="h-2 w-96"></div>
+                                <div className="h-2 w-10 md:w-96"></div>
                                 {/* Duplicate set of cards for seamless loop */}
                                 {events.map((evt, idx) => (
-                                    <div
-                                        key={`card2-${idx}`}
-                                        className="flex-shrink-0 mx-2 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 rounded-xl overflow-hidden"
-                                    >
-                                        <div>
-                                            <img
-                                                src={evt.image}
-                                                alt={evt.title}
-                                                className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover"
-                                            />
-                                            <div className="overflow-clip ">
-                                                <p className="text-sm">
-                                                    {evt.title}
-                                                </p>
-                                                <p className="font-thin text-sm">
-                                                    {evt.time}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <CardItem key={`card2-${idx}`} evt={evt} />
                                 ))}
-                                <div className="h-2 w-96"></div>
+                                <div className="h-2 w-10 md:w-96"></div>
                             </div>
                         </div>
                         <div>

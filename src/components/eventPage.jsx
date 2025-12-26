@@ -82,7 +82,7 @@ const EventsPage = ({ EventData }) => {
                                 <h2 className="text-xl font-bold mb-2">
                                     {event.time}
                                 </h2>
-                                <p className="text-neutral-800 dark:text-neutral-200 text-sm mb-4">
+                                <p className="text-neutral-800 dark:text-neutral-200 text-sm mb-4 whitespace-pre-line">
                                     {event.description}
                                 </p>
                                 <div className="space-y-4">

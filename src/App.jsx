@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
+import { Analytics } from "@vercel/analytics/react";
 import MouseGlowEffect from "./utils/MouseGlowEffect";
 import Loader from './components/loader';
 import StickyNavbar from "./components/Navbar";
@@ -17,7 +18,7 @@ function App() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowInitialLoader(false);
-        }, 4000);
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -31,6 +32,7 @@ function App() {
             {/* Display initial loader for 2 seconds, even if content is ready */}
 
             <Suspense fallback={<Loader />}>
+                <Analytics />
                 <div className="fixed inset-0 z-0 pointer-events-none">
                     <MouseGlowEffect />
                 </div>

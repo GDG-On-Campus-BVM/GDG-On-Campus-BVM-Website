@@ -164,7 +164,7 @@ const Contact = () => {
                         href="#flashback"
                         className="hover:underline"
                     >
-                      Flashback 2023 | 2022 | 2021 | 2020
+                      Flashback 2024 | 2023 | 2022 | 2021
                     </a>
                   </li>
 
@@ -191,13 +191,13 @@ const Contact = () => {
             </div>
 
             {/* Bottom Section */}
-            <div className="text-center text-gray-400 mt-8 px-4">
+            {/* <div className="text-center text-gray-400 mt-8 px-4">
               <p className="text-sm sm:text-base">
                 Copyright © 2024 All rights reserved | Designed and
                 Created By Narendra Mali & Jaimin Detroja
               </p>
               <div className="h-8 bg-transparent"></div>
-            </div>
+            </div> */}
           </div>
         </footer>
       </>
