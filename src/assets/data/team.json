@@ -45,15 +45,7 @@
     "linkedinUrl": "https://www.linkedin.com/in/pratibha-indravath-06/",
     "gmailUrl": "pratibhaindravath06@gmail.com",
     "githubUrl": "https://github.com/Pratibha706",
-    "imageUrl": "https://res.cloudinary.com/driy33xtm/image/upload/f_auto,q_auto/v1729824269/wbqx8zhrahvqp0freoxm.jpg"
-  },
-  {
-    "name": "Tanisha Patel",
-    "role": "Social Media Team",
-    "linkedinUrl": "https://www.linkedin.com/in/tanishapatel257/",
-    "gmailUrl": "p.tanisha257@gmail.com",
-    "githubUrl": "https://github.com/Tanisha257",
-    "imageUrl": "https://res.cloudinary.com/driy33xtm/image/upload/f_auto,q_auto/v1732905702/IMG-20241129-WA0001_fjvj5a.jpg"
+    "imageUrl": "https://ele7885nafmpgog1.public.blob.vercel-storage.com/team/pratibha.jpeg"
   },
   {
     "name": "Dharvi Delvadia",
@@ -78,6 +70,22 @@
     "gmailUrl": "ch.krina1310@gmail.com",
     "githubUrl": "https://github.com/krina2502",
     "imageUrl": "https://ele7885nafmpgog1.public.blob.vercel-storage.com/team/krina.jpeg"
+  },
+  {
+    "name": "Tanisha Patel",
+    "role": "Social Media Team",
+    "linkedinUrl": "https://www.linkedin.com/in/tanishapatel257/",
+    "gmailUrl": "p.tanisha257@gmail.com",
+    "githubUrl": "https://github.com/Tanisha257",
+    "imageUrl": "https://ele7885nafmpgog1.public.blob.vercel-storage.com/team/tanisha.jpeg"
+  },
+  {
+    "name": "Mirambika Ranadive",
+    "role": "Social Media Team",
+    "linkedinUrl": "https://www.linkedin.com/in/mirambika-ashish-ranadive-95510738b",
+    "gmailUrl": "mirambikaranadive@gmail.com",
+    "githubUrl": "https://github.com/mirambika-05",
+    "imageUrl": "https://ele7885nafmpgog1.public.blob.vercel-storage.com/team/mirambika.jpeg"
   },
   {
     "name": "Pari Patel",
